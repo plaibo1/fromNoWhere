@@ -1,0 +1,75 @@
+// 9B51E0
+.kostya-slide
+    &__heading
+        font-family: 'firenight', sans-serif
+        font-size: 24px
+        text-align: center
+        font-weight: 500
+        margin-top: 10px
+        margin-bottom: 15px
+    &__list
+        li
+            display: flex
+            align-items: start
+            font-family: 'firenight', sans-serif
+            font-size: 18px
+            margin: 8px 0
+            img
+                margin-right: 10px
+                min-width: 17px
+                height: 17px
+                margin-top: 3px
+    &:hover &__heading
+        color: #9B51E0
+        
+.slick-current
+    .kostya-slide
+        &__heading
+            color: #9B51E0
+.cstm-arrow
+    width: 30px
+    position: relative
+    position: absolute
+    z-index: 100
+    img
+        width: 100%
+    &-next
+        top: 25%
+        right: -5%
+    &-prev
+        top: 25%
+        left: -5%
+
+@media ( max-width: 425px )
+    .slider-pr
+        padding-right: 30px
+    .cstm-arrow-next
+        right: 0
+    .cstm-arrow-prev
+        left: -7%
+    
+@media ( max-width: 375px )
+    .slider-pr
+        padding-right: 30px
+    .cstm-arrow-next
+        top: 40%
+    .cstm-arrow-prev
+        top: 40%
+    .kostya-slide__heading
+        font-size: 18px
+    .kostya-slide__list
+        li
+            font-size: 15px
+
+@media ( max-width: 320px )
+    .slider-pr
+        padding-right: 30px
+    .cstm-arrow-next
+        top: 37%
+    .cstm-arrow-prev
+        top: 37%
+    .kostya-slide__heading
+        font-size: 16px
+    .kostya-slide__list
+        li
+            font-size: 13px
